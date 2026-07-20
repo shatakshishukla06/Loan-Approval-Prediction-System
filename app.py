@@ -279,7 +279,7 @@ p, li { color: #94b4d4 !important; }
 @st.cache_resource
 def load_model_artifacts():
     """Load the saved model, scaler, and feature columns from disk."""
-    model_path = "model_artifacts/loan_model.pkl"
+    model_path = "loan_model.pkl"
     if not os.path.exists(model_path):
         return None, None, None
     with open(model_path, "rb") as f:
@@ -960,7 +960,7 @@ Place the CSV file in the `dataset/` folder and rename it `loan_data.csv`.
 ```bash
 python model_training.py
 ```
-This generates `model_artifacts/loan_model.pkl`.
+This generates `loan_model.pkl`.
 
 **Step 5 — Launch the web app**
 ```bash
